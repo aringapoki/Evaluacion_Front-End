@@ -1,42 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
-*{
-    margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+
+* {
+    margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    font-family: 'Be Vietnam', sans-serif;
+    box-sizing: border-box;
+    font-family: "Be Vietnam", sans-serif;
 }
-.header{
-    font-size: 20px;
-    display:flex;
+
+.header {
+    font-size: 19px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.header{
+
+.header {
     margin: 40px 80px 40px 80px;
-    
 }
-.nav-menu{
+
+.nav-menu {
     width: 500px;
 }
-.menu{
-    display:flex;
+
+.menu {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
     height: 100%;
     align-items: center;
 }
-a{
-    text-decoration: none;
+
+.lineas-btn {
+    background-color: #000000;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
 }
+.burger-btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: none;
+}
+
+@media (max-width: 971px) {
+    .burger-btn {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .btn-up{
+        display:none;
+    }
+    .header {
+        margin: 40px 20px 40px 20px;
+    }
+}
+
+.lineas-btn:nth-child(3) {
+    top: 40px;
+}
+
+.lineas-btn:nth-child(2) {
+    top: 20px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #242e52;
+}
+
 .btn {
     width: 134px;
     height: 50px;
-    border: none; 
-    color: white; 
-    padding: 14px 28px; 
-    cursor: pointer; 
-    border-radius: 50px; 
-    background-color: #8B48BF;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #8b48bf;
+    font-size: 18px;
 }
-
