@@ -5,17 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Be Vietnam", sans-serif;
+    font-size: 19px;
 }
 
+/* -------HEADER------- */
 .header {
     font-size: 19px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.header {
-    margin: 40px 80px 40px 80px;
+    margin: 40px 80px;
 }
 
 .nav-menu {
@@ -39,6 +38,7 @@
     right: 0px;
     margin: auto;
 }
+
 .burger-btn {
     width: 50px;
     height: 50px;
@@ -50,14 +50,17 @@
     .burger-btn {
         display: block;
     }
+
     .nav-menu {
         display: none;
     }
-    .btn-up{
-        display:none;
+
+    .btn-up {
+        display: none;
     }
+
     .header {
-        margin: 40px 20px 40px 20px;
+        margin: 40px 20px;
     }
 }
 
@@ -68,8 +71,6 @@
 .lineas-btn:nth-child(2) {
     top: 20px;
 }
-
-
 
 a {
     text-decoration: none;
@@ -86,4 +87,58 @@ a {
     border-radius: 50px;
     background-color: #8b48bf;
     font-size: 18px;
+}
+
+/* -------BANNER------- */
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 50px;
+    color: #232C50;
+}
+.banner-text{
+    display: flex;
+    display: block;
+    flex-direction: column;
+}
+@media (max-width: 971px) {
+    .banner-text {
+        display: none;
+    }
+
+}
+
+/*-------AREA RESALTADA-------*/
+.area-res {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #8B48BF;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 40px 200px;
+}
+
+.titu-h2 {
+    width: 1000px;
+    font-size: 36px;
+    margin-right: 50px;
+    padding: auto;
+}
+
+.par-res {
+    text-align: center;
+    margin-left: 50px;
+}
+
+@media (max-width: 971px) {
+    .area-res {
+        background-color: #3CDDF3;
+    }
+
 }
