@@ -46,25 +46,6 @@
     display: none;
 }
 
-@media (max-width: 971px) {
-    .burger-btn {
-        display: block;
-    }
-
-    .nav-menu {
-        display: none;
-    }
-
-    .btn-up {
-        display: none;
-    }
-
-    .header {
-        margin: 40px 50px;
-    }
-}
-
-
 .lineas-btn:nth-child(3) {
     top: 40px;
 }
@@ -111,7 +92,6 @@ a {
 h1 {
     font-size: 50px;
     color: #232C50;
-
 }
 
 .banner-text p {
@@ -130,46 +110,6 @@ h1 {
 .banner .btn {
     align-self: flex-end;
 }
-
-@media (max-width: 1245px) {
-    .header {
-        margin: 40px 50px;
-    }
-
-    .banner {
-        margin: 20px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    .banner-text {
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .banner {
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 20px;
-    }
-
-    .banner-img {
-        width: 100%;
-        padding-left: 0px;
-        margin-bottom: 60px;
-    }
-
-    .banner-text p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-}
-
 
 /*-------AREA RESALTADA-------*/
 .area-res {
@@ -197,18 +137,100 @@ h1 {
     text-align: left;
     margin-left: 50px;
 }
+
+/*-------SECTION-CARDS---------*/
+.section-container{
+    display: flex;
+    margin: 40px;
+    flex-direction: row;
+}
+
+.card-titu{
+    display: inline;
+    padding: 15px 10px;
+}
+.numero{
+    border-radius: 50px;
+    background-color: #8b48bf;
+    font-weight: bold;
+    color:#ffffff;
+    padding: 15px 30px;
+}
+.section-container p{
+    padding: 30px;
+    padding-left: 100px;
+}
+/*--------------------------------------------*/
+/*MEDIA QUERIES*/
+
 @media (max-width: 1245px) {
+    /*-----HEADER-----*/
+    .header {
+        margin: 40px 50px;
+    }
+
+    /*-----BANNER-----*/
+    .banner {
+        margin: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .banner-text {
+        width: 100%;
+    }
+    /*-----AREA RESALTADA-----*/
     .area-res {
         padding: 30px 100px;
     } 
+
+    /*-----SECTION-CARDS-----*/
+    .section-container{
+        flex-direction: column;
+    }
+    .card-titu{
+        background-color: #dcc8ec;
+    }
+
 }
 
 @media (max-width: 768px) {
+    /*-----HEADER-----*/
+    .burger-btn {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .btn-up {
+        display: none;
+    }
+    .header {
+        margin: 40px 50px;
+    }
+
+    /*-----BANNER-----*/
+    .banner {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .banner-img {
+        width: 100%;
+        padding-left: 0px;
+        margin-bottom: 60px;
+    }
+    .banner-text p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /*-----AREA RESALTADA-----*/
     .area-res {
         background-color: #3CDDF3;
         flex-direction: column;
         align-items: left;
-        padding: 40px 30px;
+        padding: 40px 20px;
     }
     .titu-h2 {
         width: 100%;
@@ -220,4 +242,5 @@ h1 {
         margin-left: 0px;
     }
 }
+
 
