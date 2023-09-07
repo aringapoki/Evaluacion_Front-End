@@ -7,6 +7,11 @@
     font-family: "Be Vietnam", sans-serif;
     font-size: 19px;
 }
+
+body{
+    width: 100%;
+    height: 100%;
+}
 p{
     line-height: 156.6%;
 }
@@ -181,6 +186,106 @@ h1 {
     padding-left: 100px; 
     text-align: justify;
 }
+
+/* <----- Best of the month section ------> */
+
+.bestOfTheMonth{
+    border: green solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.article-container-botm{
+    border: solid red 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.article-botm{
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    width: 33%;
+    height: 300px;
+    padding: 10px;
+    align-items: center;
+    margin: 10px;
+}
+
+.avatar{
+    width: 60px;
+    margin: 10px;
+}
+
+.h4-botm{
+    padding: 10px;
+}
+
+.p-botm{
+    padding: 10px;
+    height: 100%;
+}
+
+.button-botm{
+    width: 100px;
+    margin: 10px;
+}
+
+/* <----- Best teams of the year article ------> */
+
+.bestTeamOfYear{
+    border: solid 1px blue;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8b48bf;
+    padding: 20px;
+}
+
+.h2-btoy{
+    color: white;
+}
+
+/* <----- FOOTER ------> */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid  1px gray;
+    background-color: black;
+    height: 200px;
+}
+
+.logo-footer{
+    border: 1px solid white;
+    height: fit-content;
+}
+
+.icon-rrss{
+    border: 1px white solid;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-footer-ul{
+    column-count: 2;
+    align-self: stretch;
+}
+
+.nav-footer-li{
+    padding: 10px;
+}
+
+
+
 
 /*--------------------------------------------*/
 /*MEDIA QUERIES*/
