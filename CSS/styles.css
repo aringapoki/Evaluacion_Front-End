@@ -1,297 +1,416 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Be Vietnam", sans-serif;
-    font-size: 19px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 19px;
 }
-p{
-    line-height: 156.6%;
+p {
+  line-height: 156.6%;
 }
 
 .btn:hover,
-.btn:active{
-    background-color:#232C50;
+.btn:active {
+  background-color: #232c50;
 }
 
 /* -------HEADER------- */
 .header {
-    font-size: 19px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 40px 200px;
+  font-size: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 200px;
 }
 
 .nav-menu {
-    width: 500px;
+  width: 500px;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-decoration: none;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  height: 100%;
+  align-items: center;
 }
 
 .item-nav:hover,
-.item-nav:active{
-    color:#8B48BF;
+.item-nav:active {
+  color: #8b48bf;
 }
 
 .lineas-btn {
-    background-color: #000000;
-    height: 6px;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    margin: auto;
+  background-color: #000000;
+  height: 6px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
 
 .burger-btn {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: none;
 }
 
 .lineas-btn:nth-child(3) {
-    top: 40px;
+  top: 40px;
 }
 
 .lineas-btn:nth-child(2) {
-    top: 20px;
+  top: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: #242e52;
+  text-decoration: none;
+  color: #242e52;
 }
 
 .btn {
-    width: 134px;
-    height: 50px;
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: #8b48bf;
-    font-size: 18px;
+  width: 134px;
+  height: 50px;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #8b48bf;
+  font-size: 18px;
 }
 
 /* -------BANNER------- */
 .banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 40px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 200px;
 }
 
 .banner img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .banner-img {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 h1 {
-    font-size: 50px;
-    color: #232C50;
+  font-size: 50px;
+  color: #232c50;
 }
 
 .banner-text p {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .banner-text {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    width: 40%;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 40%;
+  justify-content: center;
 }
 
 .banner .btn {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 /*-------AREA RESALTADA-------*/
 .area-res {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #8B48BF;
-    color: #ffffff;
-    width: 100%;
-    height: auto;
-    padding: 40px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #8b48bf;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 40px 200px;
 }
 
 .titu-h2 {
-    width: 50%;
-    font-size: 36px;
-    margin-right: 50px;
-    padding: auto;
+  width: 50%;
+  font-size: 36px;
+  margin-right: 50px;
+  padding: auto;
 }
 
 .par-res {
-    width: 50%;
-    display: flex;
-    text-align: left;
-    margin-left: 50px;
+  width: 50%;
+  display: flex;
+  text-align: left;
+  margin-left: 50px;
 }
 
 /*-------SECTION-CARDS---------*/
 .section-container {
-    display: flex;
-    padding: 40px 80PX;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #FAFAFA;
-
+  display: flex;
+  padding: 40px 80px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fafafa;
 }
 
 .card {
-    width: 50%;
-    padding: 10px;
+  width: 50%;
+  padding: 10px;
 }
 
 .numero {
-    border-radius: 50px;
-    background-color: #8b48bf;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 15px 30px;
-    display: inline-block;
-    margin-right: 10px;
+  border-radius: 50px;
+  background-color: #8b48bf;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 15px 30px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .section-container p {
-    color: #B3B2B7;
-    padding-left: 100px; 
-    text-align: justify;
+  color: #b3b2b7;
+  padding-left: 100px;
+  text-align: justify;
+}
+
+/* <------ Best of the month section ------> */
+
+.section-bestOfTheMonth {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-botm-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-botm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 33%;
+}
+
+.avatar {
+  padding: 10px;
+  width: 80px;
+}
+
+.h4-botm {
+  padding: 10px;
+}
+
+.p-botm {
+  padding: 10px;
+}
+
+.button-botm {
+  padding: 10px;
+  width: 300px;
+}
+
+.bestTeamOfYear {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-btoy {
+  padding: 10px;
+}
+
+/* <------ Footer ------> */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black;
+  height: 250px;
+  padding: 40px;
+  max-width: 100%;
+}
+
+.logo-footer {
+  align-self: flex-start;
+  height: fit-content;
+}
+
+.socialMediaIconsContainer {
+  align-self: flex-start;
+}
+
+.icon-rrss {
+  margin: 0 10px;
+}
+.inbox-form {
+  padding: 10px;
+  height: fit-content;
+}
+
+.copyright {
+  align-self: flex-end;
+  font-size: small;
+  color: white;
+}
+
+.nav-footer {
+  column-count: 2;
+  align-self: stretch;
+  margin: auto 20vw;
+}
+
+.ul-nav-footer {
+  padding: 10px;
+  /* height: fit-content; */
+}
+
+.nav-footer-li {
+  padding: 5px;
 }
 
 /*--------------------------------------------*/
 /*MEDIA QUERIES*/
 
 @media (max-width: 1245px) {
+  /*-----HEADER-----*/
+  .header {
+    margin: 40px 50px;
+  }
 
-    /*-----HEADER-----*/
-    .header {
-        margin: 40px 50px;
-    }
+  /*-----BANNER-----*/
+  .banner {
+    margin: 20px;
+  }
 
-    /*-----BANNER-----*/
-    .banner {
-        margin: 20px;
-    }
+  h1 {
+    font-size: 40px;
+  }
 
-    h1 {
-        font-size: 40px;
-    }
+  .banner-text {
+    width: 100%;
+  }
 
-    .banner-text {
-        width: 100%;
-    }
-
-    /*-----AREA RESALTADA-----*/
-    .area-res {
-        padding: 30px 100px;
-    }
-
+  /*-----AREA RESALTADA-----*/
+  .area-res {
+    padding: 30px 100px;
+  }
 }
 
 @media (max-width: 768px) {
+  /*-----HEADER-----*/
+  .burger-btn {
+    display: block;
+  }
 
-    /*-----HEADER-----*/
-    .burger-btn {
-        display: block;
-    }
+  .nav-menu {
+    display: none;
+  }
 
-    .nav-menu {
-        display: none;
-    }
+  .btn-up {
+    display: none;
+  }
 
-    .btn-up {
-        display: none;
-    }
+  .header {
+    margin: 40px 50px;
+  }
 
-    .header {
-        margin: 40px 50px;
-    }
+  /*-----BANNER-----*/
+  .banner {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+  }
 
-    /*-----BANNER-----*/
-    .banner {
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 20px;
-    }
+  .banner-img {
+    width: 100%;
+    padding-left: 0px;
+    margin-bottom: 60px;
+  }
 
-    .banner-img {
-        width: 100%;
-        padding-left: 0px;
-        margin-bottom: 60px;
-    }
+  .banner-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    .banner-text p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  /*-----AREA RESALTADA-----*/
+  .area-res {
+    background-color: #3cddf3;
+    flex-direction: column;
+    align-items: left;
+    padding: 40px 20px;
+  }
 
-    /*-----AREA RESALTADA-----*/
-    .area-res {
-        background-color: #3CDDF3;
-        flex-direction: column;
-        align-items: left;
-        padding: 40px 20px;
-    }
+  .titu-h2 {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
 
-    .titu-h2 {
-        width: 100%;
-        margin: 0px;
-        margin-bottom: 40px;
-    }
+  .par-res {
+    width: 100%;
+    margin-left: 0px;
+  }
 
-    .par-res {
-        width: 100%;
-        margin-left: 0px;
-    }
+  /*-----SECTION-CARDS-----*/
+  .section-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
 
-    /*-----SECTION-CARDS-----*/
-    .section-container {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding-right: 0px;
-        padding-left: 20px;
-    }
+  .card-titu {
+    background-color: #dcc8ec;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 16px;
+  }
 
-    .card-titu {
-        background-color: #dcc8ec;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        font-size: 16px;
-    }
+  .card {
+    width: 100%;
+    text-align: left;
+    padding-right: 0px;
+  }
+  .section-container p {
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 
-    .card {
-        width: 100%;
-        text-align: left;
-        padding-right: 0px; 
-    }
-    .section-container p {
-        padding-left: 10px;
-        padding-right: 40px;
-        margin-top: 30px; 
-        margin-bottom: 20px;
-    }
+  /* <------ Best of the month section ------> */
+
+  .article-botm-container {
+    flex-direction: column;
+  }
+  .article-botm {
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .bestTeamOfYear {
+    flex-direction: column;
+  }
+
+  footer {
+    display: block;
+    justify-content: center;
+    height: fit-content;
+  }
 }
