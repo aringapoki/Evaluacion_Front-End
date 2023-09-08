@@ -188,18 +188,16 @@ h1 {
 
 /* <----- Best of the month section ------> */
 
-.bestOfTheMonth {
-  border: green solid 1px;
+.section-bestOfTheMonth {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  padding: 10px;
 }
 
 .article-container-botm {
-  border: solid red 1px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 10px;
 }
@@ -207,11 +205,11 @@ h1 {
 .article-botm {
   display: flex;
   flex-direction: column;
-  border: solid black 1px;
   width: 33%;
   height: 300px;
   padding: 10px;
   align-items: center;
+  background-color: #fafafa;
   margin: 10px;
 }
 
@@ -220,8 +218,12 @@ h1 {
   margin: 10px;
 }
 
-.h4-botm {
+.h2-botm {
   padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  color: #242e53;
+  margin: 70px;
 }
 
 .p-botm {
@@ -229,23 +231,39 @@ h1 {
   height: 100%;
 }
 
-.button-botm {
-  width: 100px;
-  margin: 10px;
+.button-botm,
+.button-btoy {
+  width: 134px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 50px;
+  gap: 10px;
+  border: none;
+  font-size: medium;
 }
-
-/* <----- Best teams of the year article ------> */
+.button-botm {
+  background-color: #8b48bf;
+  color: white;
+}
 
 .bestTeamOfYear {
-  border: solid 1px blue;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #8b48bf;
   padding: 20px;
+  height: 200px;
+  align-items: center;
+  margin-top: 100px;
 }
-
+.button-btoy {
+  padding: 10px;
+  color: #8b48bf;
+}
 .h2-btoy {
   color: white;
+  font-size: 36px;
+  padding: 10px;
+  width: 30%;
 }
 
 /* <----- FOOTER ------> */
@@ -255,52 +273,85 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: solid 1px gray;
   background-color: black;
   height: 200px;
-  padding: 20px;
-  
+  padding: 2em 10em;
 }
 
 .logo-footer {
-  border: 1px solid white;
   height: fit-content;
   align-self: flex-start;
 }
 
 .socialMediaIconsContainer {
+  display: flex;
+  flex-direction: row;
   align-self: flex-start;
+  width: 153px;
+  height: 22px;
 }
 
 .icon-rrss {
-  border: 1px white solid;
+  margin: auto;
+  width: 21px;
+  height: 20px;
 }
 
 .nav-footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: auto 300px;
+  margin: auto;
 }
 
 .nav-footer-ul {
   column-count: 2;
   align-self: stretch;
-
+  list-style: none;
 }
 
 .nav-footer-li {
-  padding: 10px;
+  padding: 5px;
+}
+.a-nav-footer {
+  color: white;
+  font-size: 16px;
 }
 
 .inbox-form {
-    margin: 1px solid red;
+  padding: 10px;
+  width: 275px;
+  height: auto;
+  height: fit-content;
+  width: fit-content;
+  align-self: flex-end;
+}
+.email-input {
+  width: 201px;
+  height: 44px;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 50px;
+  gap: 10px;
+  border: none;
+  color: #a0a0a0;
+}
+.button-form {
+  width: 63px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: #8b48bf;
+  color: white;
 }
 
 .copyright {
-  color: white;
-  order: 4; /* Cambiamos el orden de visualización */
-  align-self: flex-end; /* Alineamos abajo a la derecha */
+  color: #8c8c94;
+  font-size: 12px;
+  font-weight: lighter;
+  order: 4;
+  align-self: flex-end;
 }
 
 /*--------------------------------------------*/
@@ -411,5 +462,85 @@ footer {
     padding-right: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+
+  /* <------ Best of the month section ------> */
+
+  .article-botm-container {
+    flex-direction: column;
+  }
+  .article-botm {
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .bestTeamOfYear {
+    flex-direction: column;
+    height: 370px;
+    background-color: #3cddf3;
+  }
+  .h2-btoy {
+    font-size: 40px;
+    width: 45%;
+    line-height: 48px;
+    text-align: center;
+  }
+  .button-btoy{
+    background-color: #232C50;
+    color: #FFFFFF;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    height: 540px;
+    padding: 40px 0px;
+    flex-wrap: nowrap;
+    }
+
+  .inbox-form {
+    display: flex;
+    gap: 15px;
+    order: 1;
+    width: fit-content;
+    align-self: center;
+  }
+
+  .email-input {
+    width: 310px;
+    margin-left: 10px;
+  }
+  .button-form {
+    width: 65px;
+  }
+
+  .nav-footer {
+    order: 2;
+    width: 344px;
+    margin: 0 auto;
+  }
+
+  .socialMediaIconsContainer {
+    order: 3;
+    width: 380px;
+    height: 22px;
+    justify-items: space-between;
+    align-self: center;
+  }
+
+  .logo-footer {
+    order: 4;
+    align-self: center;
+  }
+
+  .copyright {
+    order: 5;
+    align-self: center;
   }
 }
