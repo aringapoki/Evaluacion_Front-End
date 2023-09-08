@@ -7,6 +7,14 @@
     font-family: "Be Vietnam", sans-serif;
     font-size: 19px;
 }
+p{
+    line-height: 156.6%;
+}
+
+.btn:hover,
+.btn:active{
+    background-color:#232C50;
+}
 
 /* -------HEADER------- */
 .header {
@@ -30,6 +38,11 @@
     align-items: center;
 }
 
+.item-nav:hover,
+.item-nav:active{
+    color:#8B48BF;
+}
+
 .lineas-btn {
     background-color: #000000;
     height: 6px;
@@ -45,25 +58,6 @@
     position: relative;
     display: none;
 }
-
-@media (max-width: 971px) {
-    .burger-btn {
-        display: block;
-    }
-
-    .nav-menu {
-        display: none;
-    }
-
-    .btn-up {
-        display: none;
-    }
-
-    .header {
-        margin: 40px 50px;
-    }
-}
-
 
 .lineas-btn:nth-child(3) {
     top: 40px;
@@ -96,7 +90,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     margin: 40px 200px;
-    /* height: 461px; */
 }
 
 .banner img {
@@ -111,7 +104,6 @@ a {
 h1 {
     font-size: 50px;
     color: #232C50;
-
 }
 
 .banner-text p {
@@ -130,46 +122,6 @@ h1 {
 .banner .btn {
     align-self: flex-end;
 }
-
-@media (max-width: 1245px) {
-    .header {
-        margin: 40px 50px;
-    }
-
-    .banner {
-        margin: 20px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    .banner-text {
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .banner {
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 20px;
-    }
-
-    .banner-img {
-        width: 100%;
-        padding-left: 0px;
-        margin-bottom: 60px;
-    }
-
-    .banner-text p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-}
-
 
 /*-------AREA RESALTADA-------*/
 .area-res {
@@ -197,27 +149,149 @@ h1 {
     text-align: left;
     margin-left: 50px;
 }
+
+/*-------SECTION-CARDS---------*/
+.section-container {
+    display: flex;
+    padding: 40px 80PX;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FAFAFA;
+
+}
+
+.card {
+    width: 50%;
+    padding: 10px;
+}
+
+.numero {
+    border-radius: 50px;
+    background-color: #8b48bf;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.section-container p {
+    color: #B3B2B7;
+    padding-left: 100px; 
+    text-align: justify;
+}
+
+/*--------------------------------------------*/
+/*MEDIA QUERIES*/
+
 @media (max-width: 1245px) {
+
+    /*-----HEADER-----*/
+    .header {
+        margin: 40px 50px;
+    }
+
+    /*-----BANNER-----*/
+    .banner {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    /*-----AREA RESALTADA-----*/
     .area-res {
         padding: 30px 100px;
-    } 
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    /*-----HEADER-----*/
+    .burger-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .btn-up {
+        display: none;
+    }
+
+    .header {
+        margin: 40px 50px;
+    }
+
+    /*-----BANNER-----*/
+    .banner {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .banner-img {
+        width: 100%;
+        padding-left: 0px;
+        margin-bottom: 60px;
+    }
+
+    .banner-text p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /*-----AREA RESALTADA-----*/
     .area-res {
         background-color: #3CDDF3;
         flex-direction: column;
         align-items: left;
-        padding: 40px 30px;
+        padding: 40px 20px;
     }
+
     .titu-h2 {
         width: 100%;
-        margin: 0px; 
-        margin-bottom: 30px;
+        margin: 0px;
+        margin-bottom: 40px;
     }
-    .par-res{
+
+    .par-res {
         width: 100%;
         margin-left: 0px;
     }
-}
 
+    /*-----SECTION-CARDS-----*/
+    .section-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+
+    .card-titu {
+        background-color: #dcc8ec;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        text-align: left;
+        padding-right: 0px; 
+    }
+    .section-container p {
+        padding-left: 10px;
+        padding-right: 40px;
+        margin-top: 30px; 
+        margin-bottom: 20px;
+    }
+}
